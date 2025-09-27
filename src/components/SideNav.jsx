@@ -31,7 +31,7 @@ export default function SideNav(props) {
                 <button onClick={()=>{
                     setSelectedPokemon(truePokemonIndex)
                     setFalse()
-                }}    key={pokemonIndex} className={'nav-card' + (pokemonIndex===selectedPokemon? ' nav-card-selected': ' ')}>
+                }}    key={pokemonIndex} className={'nav-card' + (truePokemonIndex===selectedPokemon? ' nav-card-selected': ' ')}>
                     <p>{getFullPokedexNumber(truePokemonIndex)}</p>
                     <p>{pokemon}</p>
                 </button>
